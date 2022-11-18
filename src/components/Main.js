@@ -7,8 +7,7 @@ const Main = () => {
   const [textInput, setTextInput] = useState('');
 
   useEffect(() => {
-    // fetch('https://project-express-api-4f3s7d6nxa-lz.a.run.app/games')
-    fetch('http://localhost:8080/games')
+    fetch('https://project-express-api-4f3s7d6nxa-lz.a.run.app/games')
       .then((data) => data.json())
       .then((json) => setGamesList(json.response))
   }, []);
