@@ -6,18 +6,18 @@ const Details = () => {
   const { gameId } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:8080/games/${gameId}`)
+    fetch(`https://project-express-api-4f3s7d6nxa-lz.a.run.app/games/${gameId}`)
       .then((data) => data.json())
       .then((json) => setListItem(json.response))
   }, [gameId])
 
   return (
-    <div className="border-box">
+    <section className="border-box">
       <h1>{listItem.nesGames.title}</h1>
       <p>{listItem.nesGames.developer}</p>
       <p>{listItem.nesGames.publisher}</p>
       <p>{listItem.nesGames.release_date}</p>
-    </div>
+    </section>
   )
 }
 export default Details;
