@@ -12,12 +12,12 @@ const Details = () => {
   }, [gameId])
 
   return (
-    <section className="border-box">
+    <div className="border-box">
       <h1>{listItem.nesGames.title}</h1>
       <p>{listItem.nesGames.developer}</p>
       <p>{listItem.nesGames.publisher}</p>
       <p>{listItem.nesGames.release_date}</p>
-    </section>
+    </div>
   )
 }
 export default Details;

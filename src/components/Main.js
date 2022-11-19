@@ -17,7 +17,7 @@ const Main = () => {
   }
 
   return (
-    <section className="list-section">
+    <div className="list-section">
       <h1>All games to the Nintendo Entertainment System:</h1>
       <input type="text" onChange={onGameSearch} placeholder="Search for games..." />
       {gamesList.nesGames.map((game) => {
@@ -31,7 +31,7 @@ const Main = () => {
           return (<div key={game.id}> </div>)
         }
       })}
-    </section>
+    </div>
   )
 }
 export default Main;
